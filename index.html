@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="vievport" content="width=device-width, initial-scale=1.0">
+        <title>Color Game</title>
+        <link rel="icon" href="favicon.jpg" type="image/x-icon"/>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css' />
+        <link rel='stylesheet' href='style.css'>
+    </head>
+    <body>
+        <h1> Color Game </h1>
+        <div class="outer">
+            <canvas id='game' class='nocanvas' width=''></canvas>
+            <div class="instruction">
+              <h3>How to play</h3>
+              <br>
+              <p>
+                <p></p>Click in this box or press 'c' when the background color is written.</p>
+                <p>Be careful not to be confused by the text color. </p>
+                <p>If you make a mistake or miss a match then you will get a penalty</p>
+              </p>
+            </div>
+            <div class='scoreSheet'>
+              <h3>Game over</h3>
+              <h5>Last Score:<h5>
+              <span>
+                your score
+              </span>
+              <br><br>
+              <p>Play again, Loser.</p>
+            </div>
+            <div class="panel">
+              <button id="button" onclick="buttonF()">Start Game</button>
+              <div id="score">Score</div>
+              <div id="penalty">Errors</div>
+              <div id="misses">Misses</div>
+          </div>
+        </div>
+
+        <script src='game.js'></script>
+    </body>
+</html>

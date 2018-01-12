@@ -1,0 +1,115 @@
+* {
+  font-family: arial;
+}
+
+body {
+  background-image: url("tiles.jpg");
+}
+
+h1, .outer {
+    border: solid 3px black;
+    background-color: white;
+    margin: 3vh 20% 0 20%;
+}
+
+h1 {
+  padding: 1%;
+  box-sizing: border-box;
+  color: black;
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.outer {
+  position: relative;
+  height: 60vh;
+}
+
+canvas, .instruction, .panel, .scoreSheet {
+  height: 95%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+canvas, .instruction, .scoreSheet {
+  margin-left: 3%;
+  left:0;
+  position: absolute;
+  width: 60%;
+  border: 2px solid black;
+}
+
+canvas {
+  z-index: 1;
+}
+
+.nocanvas {
+  border:0;
+}
+
+.instruction {
+  text-align: center;
+  color: white;
+  background: black;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+.panel {
+
+  margin-right: 3%;
+  float: right;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+}
+
+.panel > * {
+  z-index: 2;
+  width: 90%;
+  height: 15%;
+  text-align: center;
+  line-height: 50px
+
+}
+
+button {
+  background-color: #0C7BD6;
+  font-weight: bold;
+}
+
+#score {
+  border: 2px solid black;
+  background-color: #278C2E;
+}
+
+#penalty {
+  border: 2px solid black;
+  background-color: #DD0808;
+}
+
+#misses {
+  border: 2px solid black;
+  background-color: yellow;
+}
+
+.scoreSheet {
+  z-index: 1;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.scoreSheet h3 {
+  font-size: 1.8em;
+}
+.scoreSheet h5 {
+  font-size: 1.5em;
+}
+.scoreSheet span {
+  font-size: 2em;
+}
